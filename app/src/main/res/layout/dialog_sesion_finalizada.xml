@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialogo"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@android:drawable/ic_dialog_info"
+        android:contentDescription="Icono sesión"
+        android:layout_marginBottom="16dp"
+        app:tint="#4CAF50"/> <TextView
+    android:id="@+id/tvTituloSesion"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="¡Sesión Completada!"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:textColor="#333333"
+    android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvResumenSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Has trabajado 25 minutos en esta actividad."
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnGuardarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar y Continuar"
+        android:textAllCaps="false"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:padding="12dp"/>
+
+</LinearLayout>

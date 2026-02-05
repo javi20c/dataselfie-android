@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_pantalla"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Botón volver -->
+
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Volver"
+            android:src="@drawable/ic_back"
+            android:tint="#1B5E20" />
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resumen Semanal de Sostenibilidad"
+            android:textColor="@color/verde_principal"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/txtRango"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:text="(---)"
+            android:textColor="@color/gris_texto"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <!-- CARD 1: Frecuencia -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/card_blanca"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Frecuencia de Acciones"
+                android:textColor="@color/verde_principal"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <!-- ENCABEZADO -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="12dp"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Acción"
+                    android:textStyle="bold"
+                    android:textColor="@color/gris_texto" />
+
+                <TextView
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text="Veces"
+                    android:textStyle="bold"
+                    android:textColor="@color/gris_texto"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Logro"
+                    android:textStyle="bold"
+                    android:textColor="@color/gris_texto"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- FILA 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/txtAccion1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Usé transporte público/bici/caminé"
+                    android:textColor="@color/gris_texto"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:paddingEnd="8dp" />
+
+                <TextView
+                    android:id="@+id/txtVeces1"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text="0/7"
+                    android:textStyle="bold"
+                    android:textColor="@color/gris_texto"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/txtLogro1"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="---"
+                    android:textColor="@color/blanco"
+                    android:background="@drawable/chip_naranja"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
+            </LinearLayout>
+
+            <!-- FILA 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/txtAccion2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="No realicé impresiones"
+                    android:textColor="@color/gris_texto"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:paddingEnd="8dp" />
+
+                <TextView
+                    android:id="@+id/txtVeces2"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text="0/7"
+                    android:textStyle="bold"
+                    android:textColor="@color/gris_texto"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/txtLogro2"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="---"
+                    android:textColor="@color/blanco"
+                    android:background="@drawable/chip_naranja"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
+            </LinearLayout>
+
+            <!-- FILA 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/txtAccion3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="No utilicé envases descartables"
+                    android:textColor="@color/gris_texto"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:paddingEnd="8dp" />
+
+                <TextView
+                    android:id="@+id/txtVeces3"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text="0/7"
+                    android:textStyle="bold"
+                    android:textColor="@color/gris_texto"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/txtLogro3"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="---"
+                    android:textColor="@color/blanco"
+                    android:background="@drawable/chip_naranja"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
+            </LinearLayout>
+
+            <!-- FILA 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/txtAccion4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Separé y reciclé materiales"
+                    android:textColor="@color/gris_texto"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:paddingEnd="8dp" />
+
+                <TextView
+                    android:id="@+id/txtVeces4"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text="0/7"
+                    android:textStyle="bold"
+                    android:textColor="@color/gris_texto"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/txtLogro4"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="---"
+                    android:textColor="@color/blanco"
+                    android:background="@drawable/chip_naranja"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- CARD 2: Análisis -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/card_blanca"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Análisis Ecológico"
+                android:textColor="@color/verde_principal"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtDiasAlMenosUna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Días con al menos 1 acción sostenible: 0 de 7 (0%)"
+                android:paddingTop="12dp"
+                android:textColor="@color/verde_principal"/>
+
+            <TextView
+                android:id="@+id/txtDiasCuatroAcciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Días con las 4 acciones completas: 0 de 7 (0%)"
+                android:paddingTop="6dp"
+                android:textColor="@color/verde_principal"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Registrar Acciones del Día"
+            android:textAllCaps="false"
+            android:textColor="@color/blanco"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@drawable/boton_verde"
+            app:backgroundTint="@null"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>

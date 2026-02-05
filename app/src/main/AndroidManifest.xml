@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Registro_Sostenibilidad" >
+        <activity
+            android:name=".AppDataSelfie.MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegistroSostenibilidad.ResumenSemanalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroSostenibilidad.RegistroDiarioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ControlHidratacion.AppHidratacionActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".ControlHidratacion.MetaActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".ControlHidratacion.RegistroActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".RegistroSueno.RegistroSuenoActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".JuegoMemoria.JuegoMemoriaActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".GestionActividades.GestionActividadesActivity"
+            android:exported="false"
+            android:label="Gestor de Tareas" />
+
+        <activity
+            android:name=".GestionActividades.CrearActividadActivity"
+            android:exported="false"
+            android:label="Nueva Actividad" />
+
+        <activity
+            android:name=".GestionActividades.DetalleActividadActivity"
+            android:exported="false"
+            android:label="Detalles de la Actividad" />
+
+        <activity
+            android:name=".GestionActividades.EnfoqueTimerActivity"
+            android:exported="false"
+            android:label="Temporizador de Enfoque" />
+
+        <activity
+            android:name=".GestionActividades.RegistrarAvanceActivity"
+            android:exported="false"
+            android:label="Registrar Avance" />
+
+    </application>
+
+</manifest>
